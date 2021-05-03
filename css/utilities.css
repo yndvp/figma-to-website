@@ -1,0 +1,18 @@
+.btn {
+  font-weight: 700;
+  background: var(--red-color);
+  color: var(--light-color);
+  border-radius: 24px;
+  padding: 14px 30px;
+  transition: background 400ms;
+}
+.btn:hover {
+  background: var(--red-hover-color);
+}
+.cyan {
+  background: var(--cyan-color);
+  color: var(--dark-color);
+}
+.cyan:hover {
+  background: var(--cyan-hover-color);
+}
