@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <!-- css -->
+    <link rel="stylesheet" href="glider.min.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -64,7 +65,166 @@
         <img class="polygon3" src="images/Polygon3.svg" alt="polygon 3" />
       </header>
       <!-- End of hero -->
+
+      <!-- brands section -->
+      <section class="brands">
+        <h2>Our Clients</h2>
+        <div class="brands-container">
+          <img src="images/Microsoft.png" alt="microsoft logo" />
+          <img src="images/Google.png" alt="google logo" />
+          <img src="images/Netflix.png" alt="netflix logo" />
+          <img src="images/Unity.png" alt="unity logo" />
+          <img src="images/Amazon.png" alt="amazon logo" />
+        </div>
+      </section>
+      <!-- End of brands section -->
+
+      <!-- about section -->
+      <section class="about">
+        <h2>About Us</h2>
+        <div class="section-content">
+          <div class="about-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis
+              rhoncus gravida integer risus, ac vulputate a. Elementum fermentum
+              feugiat nunc cras ac orci, amet sapien. Ut quis est, pellentesque
+              in et ipsum.
+            </p>
+            <p>
+              Enim eget faucibus eget enim leo nisl lorem feugiat feugiat.
+              Pellentesque duis id vel tellus in nisi, enim tellus id. Sit
+              dignissim dictum sit integer tortor porttitor erat risus libero.
+              Netus pulvinar vivamus nec, nec morbi.
+            </p>
+          </div>
+          <img src="images/About.png" alt="about us image" />
+        </div>
+      </section>
+      <!-- End of about section -->
+
+      <!-- projects section -->
+      <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="projects-gallery">
+          <img src="images/Project1.png" alt="project image 1" />
+          <img src="images/Project2.png" alt="project image 2" />
+          <img src="images/Project3.png" alt="project image 3" />
+          <img src="images/Project4.png" alt="project image 4" />
+          <img src="images/Project5.png" alt="project image 5" />
+          <img src="images/Project6.png" alt="project image 6" />
+        </div>
+        <a href="#" class="btn cyan">View All</a>
+      </section>
+      <!-- End of projects section -->
     </div>
+
+    <!-- testimonials section -->
+    <section class="testimonials">
+      <div class="wrapper">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+          <div class="testimonials-glider">
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name">
+                    <strong>Darlene Richards,</strong> Amazon
+                  </div>
+                </div>
+                <img src="images/Testimonial1.png" alt="testimonial image 1" />
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name">
+                    <strong>Peter Williams,</strong> Louis Vuitton
+                  </div>
+                </div>
+                <img src="images/Testimonial2.png" alt="testimonial image 2" />
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name"><strong>Tara Green,</strong> Ferrari</div>
+                </div>
+                <img src="images/Testimonial3.png" alt="testimonial image 3" />
+              </div>
+            </div>
+          </div>
+
+          <span class="slider-prev"
+            ><img src="images/LeftArrow.svg" alt="left arrow"
+          /></span>
+          <span class="slider-next"
+            ><img src="images/RightArrow.svg" alt="right arrow"
+          /></span>
+
+          <div role="tablist" class="dots-container">
+            <div class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of testimonials section -->
+
+    <!-- contact section -->
+    <section class="contact">
+      <div class="wrapper">
+        <h2>Contact Us</h2>
+        <form action="#">
+          <div class="group">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+          </div>
+          <div class="group">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <a href="#" class="btn cyan">Send Message</a>
+        </form>
+      </div>
+    </section>
+    <!-- End of contact section -->
+
+    <script src="glider.min.js"></script>
+    <script>
+      new Glider(document.querySelector(".testimonials-glider"), {
+        slidesToShow: 1,
+        dots: ".dots",
+        arrows: {
+          prev: ".slider-prev",
+          next: ".slider-next",
+        },
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
