@@ -344,3 +344,51 @@ input[type="text"]:nth-of-type(1) {
 input[type="text"]:nth-of-type(2) {
   margin-left: 16px;
 }
+
+/* footer */
+footer {
+  color: var(--light-color);
+  background: var(--dark-color);
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+footer a {
+  color: var(--light-color);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 32px 0;
+}
+.footer-container .logo {
+  align-self: center;
+}
+.footer-container ul {
+  margin-top: 30px;
+  padding: 0;
+}
+.footer-container ul li {
+  margin: 16px 0;
+}
+.footer-container .footer-social {
+  margin: 30px 0 24px 0;
+}
+.footer-container .footer-social a {
+  text-decoration: none;
+  margin: 0 15px;
+}
+.footer-container .footer-social a:first-child {
+  margin-left: 0;
+}
+.footer-container .footer-social a img {
+  transition: 0.5s;
+}
+.footer-container .footer-social a img:hover {
+  transform: scale(1.2);
+}
+.copyright {
+  text-align: center;
+}

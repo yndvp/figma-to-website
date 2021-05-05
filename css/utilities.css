@@ -5,6 +5,7 @@
   border-radius: 24px;
   padding: 14px 30px;
   transition: background 400ms;
+  display: inline-block;
 }
 .btn:hover {
   background: var(--red-hover-color);
