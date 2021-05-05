@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GT Web Design</title>
     <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
@@ -17,6 +17,24 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- mobile navigation -->
+      <div class="mobile-nav">
+        <ul class="menu-items">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Our Projects</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
       <!-- desktop navigation -->
       <nav class="desktop-nav">
         <div class="logo">
@@ -25,21 +43,25 @@
           </a>
         </div>
 
+        <div class="menu-icon">
+          <img src="images/MenuIcon.png" alt="menu icon" />
+        </div>
+
         <ul class="menu-items">
           <li>
-            <a href="#" class="active">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Our Projects</a>
+            <a href="#projects">Our Projects</a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#" class="btn">Get Started</a>
+            <a href="#contact" class="btn">Get Started</a>
           </li>
         </ul>
       </nav>
@@ -70,17 +92,21 @@
       <section class="brands">
         <h2>Our Clients</h2>
         <div class="brands-container">
-          <img src="images/Microsoft.png" alt="microsoft logo" />
-          <img src="images/Google.png" alt="google logo" />
-          <img src="images/Netflix.png" alt="netflix logo" />
-          <img src="images/Unity.png" alt="unity logo" />
-          <img src="images/Amazon.png" alt="amazon logo" />
+          <div class="brands-line-1">
+            <img src="images/Microsoft.png" alt="microsoft logo" />
+            <img src="images/Google.png" alt="google logo" />
+            <img src="images/Netflix.png" alt="netflix logo" />
+          </div>
+          <div class="brands-line-2">
+            <img src="images/Unity.png" alt="unity logo" />
+            <img src="images/Amazon.png" alt="amazon logo" />
+          </div>
         </div>
       </section>
       <!-- End of brands section -->
 
       <!-- about section -->
-      <section class="about">
+      <section id="about" class="about">
         <h2>About Us</h2>
         <div class="section-content">
           <div class="about-description">
@@ -104,15 +130,15 @@
       <!-- End of about section -->
 
       <!-- projects section -->
-      <section class="projects">
+      <section id="projects" class="projects">
         <h2>Our Projects</h2>
         <div class="projects-gallery">
           <img src="images/Project1.png" alt="project image 1" />
           <img src="images/Project2.png" alt="project image 2" />
           <img src="images/Project3.png" alt="project image 3" />
           <img src="images/Project4.png" alt="project image 4" />
-          <img src="images/Project5.png" alt="project image 5" />
-          <img src="images/Project6.png" alt="project image 6" />
+          <img class="hide" src="images/Project5.png" alt="project image 5" />
+          <img class="hide" src="images/Project6.png" alt="project image 6" />
         </div>
         <a href="#" class="btn cyan">View All</a>
       </section>
@@ -120,7 +146,7 @@
     </div>
 
     <!-- testimonials section -->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
       <div class="wrapper">
         <h2>Testimonials</h2>
         <div class="testimonials-container">
@@ -191,7 +217,7 @@
     <!-- End of testimonials section -->
 
     <!-- contact section -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="wrapper">
         <h2>Contact Us</h2>
         <form action="#">
